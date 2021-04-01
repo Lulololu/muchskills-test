@@ -53,7 +53,7 @@ const StyledMonth = styled.div`
 const StyledCircle1 = styled.div`
   width: 8px;
   height: 8px;
-  background-color: red;
+  background-color: var(--black);
   border-radius: 50%;
 `;
 
@@ -82,11 +82,11 @@ const TimeLine = () => {
       </FirstRow>
       <SecondRow>
         <MonthContainer>
-          <StyledCircle1 />
+          <StyledCircle1 className="circle-1" />
           <StyledMonth>APR</StyledMonth>
         </MonthContainer>
         <MonthContainer>
-          <StyledCircle1 />
+          <StyledCircle1 className="circle-1" />
           <StyledMonth>MAY</StyledMonth>
         </MonthContainer>
         <MonthContainer>
@@ -98,15 +98,15 @@ const TimeLine = () => {
           <StyledMonth>JUL</StyledMonth>
         </MonthContainer>
         <MonthContainer>
-          <StyledCircle1 />
+          <StyledCircle1 className="circle-1" />
           <StyledMonth>AUG</StyledMonth>
         </MonthContainer>
         <MonthContainer>
-          <StyledCircle1 />
+          <StyledCircle1 className="circle-1" />
           <StyledMonth>SEP</StyledMonth>
         </MonthContainer>
         <MonthContainer>
-          <StyledCircle1 />
+          <StyledCircle1 className="circle-1" />
           <StyledMonth>OCT</StyledMonth>
         </MonthContainer>
       </SecondRow>

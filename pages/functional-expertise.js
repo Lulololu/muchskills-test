@@ -1,4 +1,3 @@
-import StyledH1 from "../Components/StyledComponents/StyledH1";
 import Head from "next/head";
 import StyledPageMain from "../Components/StyledComponents/StyledPageMain";
 import JobFocusCard from "../Components/JobFocusCard";

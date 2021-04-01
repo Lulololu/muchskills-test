@@ -7,8 +7,10 @@ const StyledContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding-top: 42px;
-  padding-bottom: 20px;
+  width: 80%;
+  min-width: 320px;
+  max-width: 600px;
+  padding: 42px 10px 20px 10px;
   background-color: var(--white);
   border-radius: 10px;
 `;
@@ -24,6 +26,7 @@ const StyledCardTitle = styled.h2`
   font-weight: 900;
   font-size: 40px;
   line-height: 48px;
+  text-align: center;
   text-transform: capitalize;
 `;
 
