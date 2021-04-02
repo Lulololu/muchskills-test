@@ -1,7 +1,7 @@
 import Link from "next/link";
 import styled from "@emotion/styled";
 import { useRouter } from "next/router";
-import useWindowSize from "../custom-hooks";
+import useWindowSize from "../custom-hooks.js/useWindowSize";
 import { useEffect, useRef, useState } from "react";
 
 const StyledNav = styled.nav`
