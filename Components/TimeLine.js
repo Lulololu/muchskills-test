@@ -27,6 +27,7 @@ const StyledButton = styled.button`
   font-family: "Lato", sans-serif;
   background-color: var(--grey);
   border-radius: 100px;
+  cursor: pointer;
 `;
 
 const SecondRow = styled.div`
