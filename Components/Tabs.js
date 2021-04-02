@@ -8,6 +8,7 @@ const StyledNav = styled.nav`
   display: flex;
   flex-direction: row;
   align-items: center;
+  min-width: ${({ theme }) => theme.globalMinWidth};
   max-width: ${({ theme }) => theme.globalMaxWidth};
   height: 52px;
   background-color: var(--grey);
@@ -51,9 +52,9 @@ const StyledList = styled.ul`
     border-radius: 2px;
     transition: background-color 100ms ease-out;
 
-    :hover {
+  /*  :hover {
       background-color: var(--grey-3);
-    }
+    }*/
   }
   .active-link {
     background-color: var(--blue);
@@ -68,6 +69,11 @@ const StyledList = styled.ul`
     text-decoration: none;
     height: 100%;
     padding: 8px 24px;
+
+    .active-link {
+      background-color: var(--blue);
+      z-index: -1;
+    }
   }
 `;
 
@@ -142,6 +148,7 @@ const Tabs = () => {
   useEffect(() => {
     tabRef.current.scrollIntoView({
       behavior: "smooth",
+      block: "center",
       inline: "center",
     });
   });
